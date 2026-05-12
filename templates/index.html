@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema-LOGIN</title>
-    <link rel="stylesheet" href="/ARI/Sistema_login/static/style.css">
+    <title>Sistema de  Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <form action="/login" method="POST">
-        <h1>Faça seu login</h1>
-        <input type="text" name="user" placeholder="Usuário 👨‍💻">
-        <input type="password" name="password" placeholder="Senha 🔐">
+        <h1>Faça o seu login</h1>
+        <input type="text" name="user" placeholder="Usuario">
+        <input type="password" name="password" placeholder="Senha">
         <button type="submit">Login</button>
     </form>
+
 </body>
 </html>
